@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production URL of your site here
-  url: 'http://localhost:3000', // Update this when deploying
+  url: 'https://circuitverse-docs.netlify.app', // Update this when deploying
   baseUrl: '/', // Path under which your site is served
 
   // GitHub pages deployment config
