@@ -11,9 +11,8 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production URL of your site here
-  url: 'https://docs.circuitverse.org',
-  // Path under which your site is served
-  baseUrl: '/',
+  url: 'http://localhost:3000', // Update this when deploying
+  baseUrl: '/', // Path under which your site is served
 
   // GitHub pages deployment config
   organizationName: 'CircuitVerse', // GitHub organization or user name
@@ -38,7 +37,7 @@ const config = {
             'https://github.com/CircuitVerse/CircuitVerseDocs/edit/main/docs/',
           routeBasePath: '/', // Serve documentation at the site's root
         },
-        blog: false, // Disable blog functionality as it's not needed for this project
+        blog: false, // Disable blog functionality
         theme: {
           customCss: [
             require.resolve('./src/css/theme.css'),
@@ -52,17 +51,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/cvlogo.svg', // Social sharing image
+      image: 'img/favicon.ico', // Social sharing image
       navbar: {
         title: 'CircuitVerse Docs',
         logo: {
           alt: 'CircuitVerse Logo',
-          src: 'img/cvlogo.svg',
+          src: 'img/favicon.ico',
         },
         items: [
           {
             type: 'doc',
-            docId: 'introduction', // ID of the main document
+            docId: 'chapter1/chapter1-introduction', // ID of the main document
             position: 'left',
             label: 'Documentation',
           },
@@ -86,11 +85,11 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/introduction',
+                to: '/chapter1/chapter1-introduction',
               },
               {
                 label: 'Getting Started',
-                to: '/chapter2/getting-started',
+                to: '/chapter2/chapter2-gettingstarted',
               },
             ],
           },
@@ -126,18 +125,20 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ['javascript', 'python', 'html'], // Add any other languages as needed
+        additionalLanguages: ['javascript', 'python', 'css'], // Remove 'html' to fix the issue
       },
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false, // Allow users to toggle between light and dark modes
         respectPrefersColorScheme: true, // Automatically use system preference
       },
+      /*
       algolia: {
-        apiKey: 'YOUR_ALGOLIA_API_KEY', // Replace with your Algolia API key
-        indexName: 'YOUR_INDEX_NAME', // Replace with your Algolia index name
-        appId: 'YOUR_APP_ID', // Optional: Replace with your Algolia app ID if provided
+        apiKey: 'YOUR_ALGOLIA_API_KEY',
+        indexName: 'YOUR_INDEX_NAME',
+        appId: 'YOUR_APP_ID',
       },
+      */
     }),
 };
 
