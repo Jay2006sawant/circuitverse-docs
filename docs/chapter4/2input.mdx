@@ -20,7 +20,7 @@ Circuitverse features different input elements listed below:
 
 The **Input** circuit element can have two input states - HIGH or LOW.
 
-Property attributes that can be customized within the **PROPERTIES** panel include**:** **BitWidth**
+Property attributes that can be customized within the **PROPERTIES** panel include **BitWidth**.
 
 You can verify the behavior of the **Input** circuit element (by clicking on the circuit element once) in the live circuit embedded below:
 
@@ -33,9 +33,7 @@ You can verify the behavior of the **Input** circuit element (by clicking on the
   webkitAllowFullScreen
   mozAllowFullScreen
   allowFullScreen
->
-  {" "}
-</iframe>
+></iframe>
 
 ## Button
 
@@ -49,13 +47,14 @@ You can verify the behavior of the **Button** circuit element in the live circui
 <div>
   <iframe
     src="https://circuitverse.org/simulator/embed/untitled-184db5e7-689f-4ce3-9221-467d1830bf16?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true"
-    style="border-width:; border-style: solid; border-color:;"
-    name="myiframe"
+    style={{
+      borderWidth: "1px",
+      borderStyle: "solid",
+      borderColor: "#000",
+    }}
     id="projectPreview"
     scrolling="no"
     frameborder="1"
-    marginheight="0px"
-    marginwidth="0px"
     height="500"
     width="500"
     allowFullScreen
@@ -66,7 +65,8 @@ You can verify the behavior of the **Button** circuit element in the live circui
 
 The **Power** circuit element in the circuit design is always in a HIGH state. This component should be used when there is a need for the input to be always HIGH.
 
-<br>In the live circuit embedded below, multiple LEDs are arranged in the form of "HI". As the LEDs are all connected to the **Power** circuit element, they will always glow.</br>
+<br />
+In the live circuit embedded below, multiple LEDs are arranged in the form of "HI". As the LEDs are all connected to the **Power** circuit element, they will always glow.
 
 <iframe
   width="500px"
@@ -77,17 +77,13 @@ The **Power** circuit element in the circuit design is always in a HIGH state. T
   webkitAllowFullScreen
   mozAllowFullScreen
   allowFullScreen
->
-  {" "}
-</iframe>
+></iframe>
 
 ## Ground
 
 The **Ground** circuit element in the circuit design is always in a LOW state.
 
 While in AC power distribution and some radio antenna systems the “ground” implies a connection to the earth, in digital logic design "ground" is a point in the circuit that the user calls as zero volts. The ground in the circuit is used as a reference for measuring voltages across different points in the circuit.
-
-/* You can verify the behavior of the **Ground** circuit element in the live circuit embedded below */
 
 ## ConstantVal
 
@@ -102,9 +98,7 @@ The **ConstantVal** circuit element allows the user to input a constant value (i
   webkitAllowFullScreen
   mozAllowFullScreen
   allowFullScreen
->
-  {" "}
-</iframe>
+></iframe>
 
 As the above example explains, the value of the **ConstantVal** circuit element can be changed by double-clicking the component and entering the value in the prompt.
 
@@ -127,11 +121,11 @@ You can verify the behavior of the **Stepper** circuit element in the live circu
 
 ## Random
 
-The **Random** circuit element generates a random value in the range (0, maxvalue) every time it receives a HIGH signal from the clock. As the simulation demonstrates, it has 3 ports in total:
+The **Random** circuit element generates a random value in the range (0, maxvalue) every time it receives a HIGH signal from the clock. It has 3 ports in total:
 
-- Max Value: input, maximum value generated.
-- Clock: input clock element. Every time the clock receives a HIGH input, the random element generates a number.
-- Random Value: output, the number generated
+- **Max Value**: input, maximum value generated.
+- **Clock**: input clock element. Every time the clock receives a HIGH input, the random element generates a number.
+- **Random Value**: output, the number generated.
 
 The value is also displayed in decimal notation on the random element.
 
@@ -146,19 +140,17 @@ You can verify the behavior of the **Random** circuit element in the live circui
   webkitAllowFullScreen
   mozAllowFullScreen
   allowFullScreen
->
-  {" "}
-</iframe>
+></iframe>
 
 ## Counter
 
-The **Counter** circuit element is a binary counter that runs from zero to a specified maximum value. As the simulation demonstrates, it has five ports in total:
+The **Counter** circuit element is a binary counter that runs from zero to a specified maximum value. It has five ports in total:
 
-- Max Value: input, maximum value that the counter will reach.
-- Clock: input clock element, every time the clock gets HIGH the counter increments by one.
-- Reset: input, when HIGH it resets the counter to zero.
-- Zero: output, it's HIGH when the counter is zero.
-- Value: output, value of the counter in binary.
+- **Max Value**: input, maximum value that the counter will reach.
+- **Clock**: input clock element, every time the clock gets HIGH the counter increments by one.
+- **Reset**: input, when HIGH it resets the counter to zero.
+- **Zero**: output, it's HIGH when the counter is zero.
+- **Value**: output, value of the counter in binary.
 
 The value is also displayed in decimal notation on the counter element.
 
@@ -173,6 +165,4 @@ You can verify the behavior of the Counter circuit element in the live circuit e
   webkitAllowFullScreen
   mozAllowFullScreen
   allowFullScreen
->
-  {" "}
-</iframe>
+></iframe>
