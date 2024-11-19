@@ -97,16 +97,6 @@ const sidebars = {
         'chapter8/chapter8-shortcuts',
       ],
     },
-    {
-      type: 'doc',
-      id: 'docs-memoryElements',
-      label: 'Memory Elements',
-    },
-    {
-      type: 'doc',
-      id: 'docs-README',
-      label: 'Documentation README',
-    },
   ],
 };
 
