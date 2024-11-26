@@ -66,6 +66,12 @@ const config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          type: 'doc',
+          docId: 'contributors/contributors', // Points to the new contributors page
+          position: 'right',
+          label: 'Contributors',
+        },
       ],
     },
     footer: {
