@@ -4,11 +4,11 @@ title: "Best Practices for Working with CircuitVerse Simulator"
 description: "Best practices for using the CircuitVerse simulator effectively."
 ---
 
-# Best Practices For Working With CircuitVerse Simulator
+# Best Practices for Working with CircuitVerse Simulator
 
-1. **Build in small steps**: Let us assume that you are implementing an arithmetic logic unit (ALU). Add a little functionality, then stop and test that functionality by trying out different input values. Once you're convinced that the new functionality works, add a little more functionality and repeat the cycle. If required, work out the logic on paper with a truth table before trying to implement the circuitry. Implement flags as needed. Test the behavior of the flags for different situations.
+1. **Build in small steps**: Let us assume you are implementing an arithmetic logic unit (ALU). Add a small functionality, then stop and test it by trying out different input values. Once you are convinced that the new functionality works, add more and repeat the cycle. If needed, work out the logic on paper with a truth table before implementing the circuitry. Implement flags as required and test their behavior in different scenarios.
 
-2. **Mind those circuit element properties**: Use the **PROPERTIES** panel smartly while designing your circuit. Consider that you are building an adder that receives eight bits as an input. As Figure 2.57 illustrates, the **BitWidth** property attribute of the **Adder** circuit element must be set to eight bits in the **PROPERTIES** panel. Any input circuit elements connected to the 8-bit adder should also be 8 bits wide. Thus, the **BitWidth** property attribute of the **Input** circuit elements in Figure 2.57 has been also set to eight bits.
+2. **Mind circuit element properties**: Use the **PROPERTIES** panel wisely while designing your circuit. For example, if you are building an adder that receives eight bits as input, ensure the **BitWidth** property of the **Adder** circuit element is set to eight bits in the **PROPERTIES** panel. Similarly, any input circuit elements connected to the 8-bit adder should also be 8 bits wide. Thus, the **BitWidth** property of the **Input** circuit elements in Figure 2.57 has also been set to eight bits.
 
    ![](/img/img_chapter2/2.57.png)
 
@@ -16,8 +16,8 @@ description: "Best practices for using the CircuitVerse simulator effectively."
      <em>Figure 2.57</em>
    </div>
 
-3. **Manage your circuit layouts**: While building complex design schematics, CircuitVerse highly recommends users to edit layouts of the subcircuits prior to adding wire connections across different nodes. If the node positions within the circuit layout are edited after making the wiring connections, then some of the wiring connections across different nodes or ports in the integrated circuit schematic may be lost.
+3. **Manage circuit layouts**: When building complex schematics, CircuitVerse strongly recommends editing the layouts of the subcircuits before adding wiring connections across nodes. Editing node positions after making the wiring connections may cause some wiring connections in the integrated circuit schematic to be lost.
 
-4. **Copy paste your circuits:** Cross-project copy and paste is supported to include whole or parts of circuits across different circuit tabs or across different project URLs.
+4. **Copy-paste your circuits**: Cross-project copy-paste is supported, allowing you to include whole or partial circuits across different circuit tabs or project URLs.
 
-5. **Annotate your circuits:** As your design goes through multiple revisions, use different annotation tools available within the CircuitVerse simulator to add the version number, date, amendments, and different group members involved. Refer to [Chapter 4](/chapter4/7annotation.mdx) to learn more about the different annotation elements available within the CV simulator.
+5. **Annotate your circuits**: As your design goes through multiple revisions, use annotation tools available in the CircuitVerse simulator to add version numbers, dates, amendments, and team member details. Refer to [Chapter 4](/chapter4/7annotation.mdx) to learn more about annotation elements available within the CV simulator.
