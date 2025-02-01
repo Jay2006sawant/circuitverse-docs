@@ -105,3 +105,8 @@ div[style="overflow: auto"]{
     width: 296px;
   }  
 }
+
+.responsive-iframe iframe{
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+}
